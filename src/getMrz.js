@@ -224,7 +224,7 @@ function internalGetMrz(image, options = {}) {
   let cropped = toCrop.crop(mrzCropOptions);
   if (debug) images.crop = cropped;
 
-  return debug ? { images } : cropped;
+  return debug ? { images } :  { cropped };
 }
 
 function getRectKernel(w, h) {
